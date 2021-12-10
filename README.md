@@ -1,6 +1,5 @@
-# Melody
-Учебный проект
-tehnology
+# Melody Учебный проект
+Технологии:
 -Html
 -Css
 -JavaScript
