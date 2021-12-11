@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "Bebas Neue";
+    src: local("BebasNeueRegular"), url("../fonts/BebasNeueRegular.woff2") format("woff2"),
+        url("../fonts/BebasNeueRegular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 * {
     box-sizing: border-box;
 }
@@ -5,6 +15,8 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+/* Header */
 
 .header {
     background-color: #635854;
@@ -68,6 +80,72 @@ body {
     text-decoration: none;
 }
 
-/* .logo-link{
-    margin: 12px;
-} */
+/* Main */
+
+.main {
+    max-width: 1280px;
+    /* выравнивание по логотипу */
+    margin: auto;
+
+    padding-top: 54px;
+    /* внутренний отступ сверху */
+    display: flex;
+}
+
+.main-info {
+    flex-grow: 1;
+    /* блок занимает место на весь контейнер */
+    text-align: center;
+    /* выравниваем содержимое блока по центру */
+    display: flex;
+    flex-direction: column;/* главная ось по вертикали */
+    align-items: center;
+    justify-content: space-between; /* место между элементами */
+}
+
+.home-image path {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.home-image path:hover {
+    opacity: 1;
+}
+
+.counter-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.counter-btn {
+    background-color: #fff;
+    border: none;/* убираем обводку у кнопки */
+    cursor: pointer;
+
+}
+
+.main-title {
+    margin: 0;/* убираем базовые отступы */
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-size: 37px;
+    line-height: 37px;
+
+    color: #635854;
+}
+
+.counter {
+    color: #635854;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 124px;
+    margin-top: 10px;
+}
+
+.button-primary {
+    background: #3596F5;
+    border-radius: 6px;
+    color: #fff;
+    padding: 16px 36px;
+    cursor: pointer;
+}
